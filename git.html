@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>git-docs - <a href="https://git-scm.com">git-scm</a></h1>
+	<h2>setup-email-and-password<sup><a href="#1">[gitutorial]</a></sup></h2>
+<table>
+	<tr>
+		<th>
+			<code>git config --global user.email "email"</code>
+		</th>
+		<td>
+			setup email
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<code>git config --global user.name "username"</code>
+		</th>
+		<td> 
+			setup username 
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<code>git config --global core.editor vim</code>
+		</th>
+		<td>
+			setup default editor
+		</td>
+	</tr>
+</table>
+
+<p> remove the <b>--global flag</b> to set it locally instead</p>
+
+<h2>remote-repos<sup><a href="#2">2</a>, <a href="#3">3</a></sup></h2>
+<table>
+	<tr>
+		<th>
+			<code>git remote -v</code>
+		</th>
+		<td>
+			lists the remote servers you have configured
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<code>git remote add &lt;shortname&gt; &lt;url&gt;</code>
+		</th>
+		<td rowspan="2">
+			adds a remote repo like github
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<code>git remote add origin https://github.com/username/repo</code>
+		</th>
+	</tr>
+</table>
+
+<h2>using-a-credential-helper<sup><a href="#4">4</a></sup></h2>
+<hr>
+<p>this tells git to store your credentials unencrypted on the disk so you dont have to log in everytime you push</p>
+
+<div class="d"><code>git config --global credential.helper store</code>&nbsp;&nbsp;&nbsp;<button onclick="copy('git config --global credential.helper store')">copy</button></div>
+<p>see <a href="#5">git-credential-store</a> and <a href="#6">git-credentials</a>
+
+<h2>using-git</h2>
+<hr>
+
+<p>when you want to add, commit, and push changes</p>
+<div class="d"><code>git commit -a -m "commit-message" &amp;&amp; git push &lt;remote&gt; &lt;branch&gt;</code></div>
+<p>where <b>remote</b> is a remote repository and <b>branch</b> is your branch to push</p>
+
+<script>
+	function copy(a){
+		/*let a = "hello";*/
+		navigator.clipboard.writeText
+			(a)
+	}
+</script>
+
+<h2>references</h2>
+<hr>
+<div><a id="1" href=https://git-scm.com/docs/gittutorial>1-gituttorial</a></div>
+<div><a id="2" href=https://git-scm.com/book/ms/v2/Git-Basics-Working-with-Remotes>2-basics-working-with-remotes</a></div>
+<div><a id="3" href="https://git-scm.com/docs/git-remote">3-git-remote-manpage</a></div>
+<div><a id="4" href="https://git-scm.com/doc/credential-helpers">4-credential-helpers</a></div>
+<div><a id="5" href="https://git-scm.com/docs/git-credential-store">5-git-credential-store</a></div>
+<div><a id="6" href="https://git-scm.com/docs/gitcredentials">6-gitcredentials</a></div>
+
+</body>
+</html>
