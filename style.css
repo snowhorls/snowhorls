@@ -1,7 +1,7 @@
 body{
 	background-color: black;
 	color: white;
-	font-size: large;
+	font-size: 25px;
 }
 
 h1,h2,h3,p{
@@ -40,6 +40,10 @@ hr{
 
 .right{
 	margin-left: 2px;
+}
+.c{
+	text-align: center;
+	margin: auto;
 }
 
 
