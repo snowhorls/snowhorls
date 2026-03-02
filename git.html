@@ -8,7 +8,7 @@
 	<img src="home.png" alt="home_page">
 </a>
 	<h1>git-docs - <a href="https://git-scm.com">git-scm</a></h1>
-<p>docs for git setup and usage in the command line</p>
+<p>docs for git setup and usage in the command line so i dont have to find every command whenever i forget them</p>
 	<h2>setup-email-and-password<sup><a href="#1">[gitutorial]</a></sup></h2>
 <hr>
 <table>
@@ -75,9 +75,16 @@
 <h2>using-git</h2>
 <hr>
 
-<p>when you want to add, commit, and push changes</p>
+<p>when you want to add, commit, and push changes<sup><a href="#1">[see-gittutorial]</a></sup></p>
 <div class="d"><code>git commit -a -m "commit-message" &amp;&amp; git push &lt;remote&gt; &lt;branch&gt;</code></div>
 <p>where <b>remote</b> is a remote repository and <b>branch</b> is your branch to push</p>
+<br>
+<p>when you add new files to your project the above command wont work and you need to add them with the <b>git add</b> command</p>
+<div class="d"><code>git add .</code></div>
+<p>then you can commit but without the -a flag</p>
+<div class="d">git commit -m "message"</div>
+<p>and then push</p>
+<div class="d"><code>git push</code></div>
 
 <script>
 	function copy(a){
