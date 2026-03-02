@@ -18,9 +18,16 @@ h2{
 div{
 	margin-left: 300px;
 }
+.div {
+  	width: 30%;
+	margin:auto;
+  	display: inline-block;
+
+}
 hr{
 	width: 70%;
 	text-align: center;
+		
 }
 
 .paragraph{
