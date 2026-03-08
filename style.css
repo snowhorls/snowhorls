@@ -1,65 +1,55 @@
-body{
+body {
 	background-color: black;
 	color: white;
-	font-size: large;
 }
 
-h1,h2,h3,p{
-	text-align: center;
+.sidenav {
+	width: 160px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 20px;
+	border-right: 2px solid white;
+}	
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
 }
 
-h1{
-	color:  #5dade2 ;
+.sidenav button, h2{
+	display: inline;
+	margin-left: 15px;
+	font-size: 25px;
 }
 
-h2{
-	color: green;
-}
-div{
-	margin-left: 300px;
-}
-hr{
-	width: 70%;
-	text-align: center;
-}
-
-.paragraph{
-	width: 1000px;
-	margin: 0 auto;
-}
-
-.d{
-	text-align: center;
-	margin: auto;
+.sidenav button {
+	background: black;
+	color: blue;
 	border: 1px solid blue;
-	width: 50%;
-	/*display: inline-block;*/
-	overflow: auto;
-
 }
 
-.right{
-	margin-left: 2px;
+.main {
+	margin-left: 160px;
+	margin-top: 40px;
+	padding: 0px 10px;
+	font-size: 28px;
 }
 
-
-
-code {
-  font-family: Liberation,"Sans";
-  color: #ffffff;
-  background-color: #000000;
-  padding: 2px;
-  font-size: 105%;
-  margin: auto;
-  text-align: center;
-  /*border: 1px solid white;*/
+.sand {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
 }
 
-table, th, td {
-	margin: auto;
-	text-align: center;
-	/*margin-left: 350px;*/
-       	border: 1px solid white;
-   	border-collapse: collapse;
-  	padding: 15px;
+.sandwhich {
+	width: 35px;
+	display: none;
 }

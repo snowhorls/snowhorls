@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>snoworls</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<h1 id="introduction">Welcome to My personal Website</h1>
-		<p>i hope you find what you are looking for</p>
-		<h2>open source and linux</h2>
-		<p class="paragraph">
-		Everyone should use open source software and Linux because it gives you better controll over your computer and
-		it is a good option if you want to separate yourself from all the big tech companies that steal your data.
-		However most poeple just want to get work done without worring about setting up their computer and they think
-		configuring linux is just a waste of time. But the time you put into it all becomes worth it for the
-		extensibility and privacy that linux provides. Windows also comes with much more stuff preinstalled which makes it
-		recource intensive while linux is light and super fast. The biggest advantage to using linux in my oppinion
-		is that it forces you to learn new things about your computer and make you an overall smarter more valuable
-		developer.</p> 
-	</body>
-	<p>The HTML <code>button</code> tag defines a clickable button.</p>
-	<a href="git.html">git</a>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="sidenav" id="sidebar">
+		<h2>Sidebar</h2>
+		<button onclick="togglesidebar()">x</button>
+		<hr>
+		<a href="~/git.html">git-docs</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+		<a href="#">Services</a>
+	</div>
+	<div class="main" id="main1">
+
+		<div  onclick="togglesidebar()" class="sandwhich" id="sandwhich">
+			<div class="sand"></div>
+			<div class="sand"></div>
+			<div class="sand"></div>
+		</div>
+		<!--<button id="button" style="display: none" onclick="togglesidebar()">+</button>-->
+
+		<h1>Snowhorls Home Page</h1>
+		<p>hello how are you</p>
+		<p>
+A constant force, acting on a particle of mass m, will produce a constant acceleration a. Let us choose the x-axis to be in the common direction of F and a. What is the work done by this force on the particle in causing a displacement x? We have, for constant acceleration, the relations a = ( V - v ) / t and x = ½ ( V + v ) t. Here v is the particle's speed at t = 0 and V is its speed at time t. The the work done is W = F x = m a x = m ( ( V - v ) / t ) ( ½ ( V + v ) ) t = ½ m V² - ½ m v². We call one-half the product of the mass of a body and the square of its speed the kinetic energy of the body. If we represent kinetic energy by the symbol K, then K = ½ m v². We may then state the above equation in this way: The work done by the resultant force acting on a particle is equal to the change in the kinetic energy of the particle.
+		</p>
+	</div>
+
+
+
+<script>
+	var x = document.getElementById("sidebar");
+	var y = document.getElementById("main1");
+	var z = document.getElementById("sandwhich");
+	function togglesidebar() {
+		if (x.style.width === "160px" || x.style.width === "") {
+			x.style.width = "0";
+			y.style.marginLeft = "0";
+			z.style.display = "block"
+		}
+		else {
+			x.style.width = "160px";
+			y.style.marginLeft = "160px";
+			z.style.display = "none"
+		}}
+</script>
+
+
+</body>
+
 </html>
