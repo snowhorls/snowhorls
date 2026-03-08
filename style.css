@@ -64,7 +64,7 @@ body {
 /* small screen / mobile screen settings */
 
 @media screen and (max-width: 600px) {
-	.sidenav {height: 250px; width: 200px; border: 1px solid white; margin: 0; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+	.sidenav {display: none; height: 250px; width: 200px; border: 1px solid white; margin: 0; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 	.sidenav a {font-size: 18px;}
 	.sandwhich {display: block;}
 	.main {margin-left: 0;}
