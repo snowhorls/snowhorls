@@ -62,8 +62,9 @@ body {
 
 /* small screen / mobile screen settings */
 
-@media screen and (max-height: 320px) {
-	.sidenav {padding-top: 15px; display: none;}
+@media screen and (max-height: 600px) {
+	.sidenav {padding-top: 15px; width: 0;}
 	.sidenav a {font-size: 18px;}
 	.sandwhich {display: block;}
+	.main {margin-left: 0;}
 }
