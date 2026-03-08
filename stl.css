@@ -1,0 +1,76 @@
+body{
+	background-color: black;
+	color: white;
+	font-size: 25px;
+}
+
+h1,h2,h3,p{
+	text-align: center;
+}
+
+h1{
+	color:  #5dade2 ;
+}
+
+h2{
+	color: green;
+}
+div{
+	margin-left: 300px;
+}
+.div {
+  	width: 30%;
+	margin:auto;
+  	display: inline-block;
+
+}
+hr{
+	width: 70%;
+	text-align: center;
+		
+}
+
+.paragraph{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.d{
+	text-align: center;
+	margin: auto;
+	border: 1px solid blue;
+	width: 50%;
+	/*display: inline-block;*/
+	overflow: auto;
+
+}
+
+.right{
+	margin-left: 2px;
+}
+.c{
+	text-align: center;
+	margin: auto;
+}
+
+
+
+code {
+  font-family: Liberation,"Sans";
+  color: #ffffff;
+  background-color: #000000;
+  padding: 2px;
+  font-size: 105%;
+  margin: auto;
+  text-align: center;
+  /*border: 1px solid white;*/
+}
+
+table, th, td {
+	margin: auto;
+	text-align: center;
+	/*margin-left: 350px;*/
+       	border: 1px solid white;
+   	border-collapse: collapse;
+  	padding: 15px;
+}
