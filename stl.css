@@ -73,4 +73,5 @@ table, th, td {
        	border: 1px solid white;
    	border-collapse: collapse;
   	padding: 15px;
+	width: 1000px;
 }
