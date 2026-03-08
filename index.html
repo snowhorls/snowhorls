@@ -9,7 +9,7 @@
 <body>
 	<div class="sidenav" id="sidebar">
 		<h2>Sidebar</h2>
-		<button onclick="togglesidebar()">x</button>
+		<button onclick="toggle()">x</button>
 		<hr>
 		<a href="git.html">git-docs</a>
 		<a href="#">Services</a>
@@ -19,7 +19,7 @@
 	</div>
 	<div class="main" id="main1">
 
-		<div  onclick="togglesidebar()" class="sandwhich" id="sandwhich">
+		<div  onclick="toggle()" class="sandwhich" id="sandwhich">
 			<div class="sand"></div>
 			<div class="sand"></div>
 			<div class="sand"></div>
@@ -31,6 +31,9 @@
 		<p>
 A constant force, acting on a particle of mass m, will produce a constant acceleration a. Let us choose the x-axis to be in the common direction of F and a. What is the work done by this force on the particle in causing a displacement x? We have, for constant acceleration, the relations a = ( V - v ) / t and x = ½ ( V + v ) t. Here v is the particle's speed at t = 0 and V is its speed at time t. The the work done is W = F x = m a x = m ( ( V - v ) / t ) ( ½ ( V + v ) ) t = ½ m V² - ½ m v². We call one-half the product of the mass of a body and the square of its speed the kinetic energy of the body. If we represent kinetic energy by the symbol K, then K = ½ m v². We may then state the above equation in this way: The work done by the resultant force acting on a particle is equal to the change in the kinetic energy of the particle.
 		</p>
+
+
+		<div id="test"></div>
 	</div>
 
 
@@ -39,16 +42,37 @@ A constant force, acting on a particle of mass m, will produce a constant accele
 	var x = document.getElementById("sidebar");
 	var y = document.getElementById("main1");
 	var z = document.getElementById("sandwhich");
+	var a = document.getElementById("test");
+	let text = screen.width;
+	function toggle() {
+		if (screen.width < 600) {
+			togglemobilesidebar();
+			a.innerHTML = text;
+		}
+		else {
+			togglesidebar();
+			a.innerHTML = "hello";
+		}}
+
+	function togglemobilesidebar() {
+		if (x.style.width === "160px" || x.style.width === "") {
+			x.style.width = "0";
+		}
+		else {
+			x.style.width = "160px";
+		}}
+
+
 	function togglesidebar() {
 		if (x.style.width === "160px" || x.style.width === "") {
 			x.style.width = "0";
 			y.style.marginLeft = "0";
-			z.style.display = "block"
+			z.style.display = "block";
 		}
 		else {
 			x.style.width = "160px";
 			y.style.marginLeft = "160px";
-			z.style.display = "none"
+			z.style.display = "none";
 		}}
 </script>
 
