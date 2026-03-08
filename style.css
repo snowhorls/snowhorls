@@ -6,7 +6,7 @@ body {
 /* sidebar */
 
 .sidenav {
-	width: 160px;
+	width: 20%;
 	height: 100%;
 	position: fixed;
 	z-index: 1;
