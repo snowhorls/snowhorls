@@ -3,6 +3,8 @@ body {
 	color: white;
 }
 
+/* sidebar */
+
 .sidenav {
 	width: 160px;
 	height: 100%;
@@ -35,12 +37,16 @@ body {
 	border: 1px solid blue;
 }
 
+/* main text of website */
+
 .main {
 	margin-left: 160px;
 	margin-top: 40px;
 	padding: 0px 10px;
 	font-size: 28px;
 }
+
+/* menu icon */
 
 .sand {
 	width: 35px;
@@ -52,4 +58,11 @@ body {
 .sandwhich {
 	width: 35px;
 	display: none;
+}
+
+/* small screen / mobile screen settings */
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
 }
