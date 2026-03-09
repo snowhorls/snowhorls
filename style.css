@@ -61,11 +61,50 @@ body {
 	display: none;
 }
 
+.mobile {
+	display: block; 
+}
+
+
+
+
+
+.pop {
+background-color: black;
+overflow-x: hidden;
+z-index: 1;
+display: block; 
+height: 250px; 
+width: 200px; 
+border: 1px solid white; 
+margin: 0; 
+position: fixed; 
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%);}
+
+.pop a {
+padding: 6px 8px 6px 16px;
+font-size: 18px;
+display: block;
+text-decoration: none;
+}
+
+.pop div{
+height: 10px;
+margin-top: 0;
+}
+
+.pop button {
+position: absolute;
+right: 0;
+}
+
+
 /* small screen / mobile screen settings */
 
 @media screen and (max-width: 600px) {
-	.sidenav {display: none; height: 250px; width: 200px; border: 1px solid white; margin: 0; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-	.sidenav a {font-size: 18px;}
-	.sandwhich {display: block;}
+	.sidenav {display: none;}
 	.main {margin-left: 0;}
+	.sandwhich {display: block;}
 }

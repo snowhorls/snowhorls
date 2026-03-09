@@ -7,15 +7,23 @@
 </head>
 
 <body>
+
+	<div class="pop" id="pop">
+		<div class="n"><button onclick="togglepop()">x</button></div>
+		<h2>External-Links</h2>
+		<hr>
+		<a href="https://www.youtube.com/channel/UC1bJ_Ejk6LumikqJLvcQrmg">youtube</a>
+		<a href="https://github.com/snowhorls">github</a>
+	</div>
+
+
+
 	<div class="sidenav" id="sidebar">
 		<h2>Sidebar</h2>
 		<button onclick="toggle()">x</button>
 		<hr>
 		<a href="git.html">git-docs</a>
-		<a href="#">Services</a>
-		<a href="#">Clients</a>
-		<a href="#">Contact</a>
-		<a href="#">Services</a>
+		<button style="font-size: 15px; margin-top: 100px;" onclick="togglepop()">Socials</button>
 	</div>
 	<div class="main" id="main1">
 
@@ -43,35 +51,29 @@ A constant force, acting on a particle of mass m, will produce a constant accele
 	var y = document.getElementById("main1");
 	var z = document.getElementById("sandwhich");
 	var a = document.getElementById("test");
-	let text = screen.width;
+	var b = document.getElementById("pop");
+
+
+
+	function togglepop() {
+		if (b.style.display === "block" || b.style.display === "") {
+			b.style.display = "none";
+		}
+		else {
+			b.style.display = "block";
+		}}
+
+
+
 	function toggle() {
-		if (screen.width < 600) {
-			togglemobilesidebar();
-			a.innerHTML = text;
-		}
-		else {
-			togglesidebar();
-			a.innerHTML = "hello";
-		}}
-
-	function togglemobilesidebar() {
 		if (x.style.display === "block" || x.style.display === "") {
-			x.style.display = "none"
-		}
-		else {
-			x.style.display = "block"
-		}}
-
-
-	function togglesidebar() {
-		if (x.style.width === "160px" || x.style.width === "") {
-			x.style.width = "0";
-			y.style.marginLeft = "0";
+			y.style.marginLeft = "0"
+			x.style.display = "none";
 			z.style.display = "block";
 		}
 		else {
-			x.style.width = "160px";
-			y.style.marginLeft = "160px";
+			y.style.marginLeft = "160px"
+			x.style.display = "block";
 			z.style.display = "none";
 		}}
 </script>
